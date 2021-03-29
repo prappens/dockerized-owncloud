@@ -1,6 +1,7 @@
 # dockerized-owncloud
 
-Adopted Owncloud Docker setup from the official [Owncloud documentation](https://doc.owncloud.com/server/admin_manual/installation/docker/).
+Adopted Owncloud Docker setup from the official [Owncloud documentation](https://doc.owncloud.com/server/admin_manual/installation/docker/), and the
+corresponding official [Owncloud docs repository](https://github.com/owncloud/docs).
 
 # Why?
 
@@ -23,3 +24,4 @@ a template file is checked in:
 2. Do a `docker-compose up` in repository directory.
 3. Visit your Owncloud instance under your specified Domain.
 
+Try it at your own risk, no warranties!
