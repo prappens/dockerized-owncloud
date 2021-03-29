@@ -14,6 +14,9 @@ I noticed that the official Owncloud docker-compose.yml does not use the officia
 that both images do not use a pinned Docker tag and the created containers are not named. I tackled all those issues and further improved the 
 `.env` file which sets the corresponding credentials.
 
+The negative side effect of naming the containers is the fact that only one Owncloud instance can run on a host, since otherwise the names will
+be in conflict. From my perspective this is a reasonable tradeoff to have some static names, which enables easier Docker CLI usage.
+
 # How?
 
 The setup is basically the same as stated [here](https://doc.owncloud.com/server/admin_manual/installation/docker/), but within this repository
@@ -25,3 +28,4 @@ a template file is checked in:
 3. Visit your Owncloud instance under your specified Domain.
 
 Try it at your own risk, no warranties!
+
