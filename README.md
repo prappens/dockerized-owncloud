@@ -19,7 +19,7 @@ be in conflict. From my perspective this is a reasonable tradeoff to have some s
 
 # How?
 
-The setup is basically the same as stated [here](https://doc.owncloud.com/server/admin_manual/installation/docker/), but within this repository
+The setup and features are basically the same as stated [here](https://doc.owncloud.com/server/admin_manual/installation/docker/), but within this repository
 a template file is checked in:
 
 0. Clone repository, or download files.
