@@ -6,13 +6,13 @@ corresponding official [Owncloud docs repository](https://github.com/owncloud/do
 # Why?
 
 Just for fun I wanted to install OwnCloud on an old machine with Docker. I stumbled accross the previously mentioned Docker setup from Owncloud.
-I tried it, and disliked some of the implementations within the docker-compose. Therefoer I created this simple adoption.
+I tried it, and disliked some of the design decisions within the `docker-compose.yml`. Therefore I created this simple adoption.
 
 # What?
 
 I noticed that the official Owncloud docker-compose.yml does not use the official MariaDB and Redis Docker images. In addition to that I noticed
 that both images do not use a pinned Docker tag and the created containers are not named. I tackled all those issues and further improved the 
-`.env` file which sets the corresponding credentials.
+`.env` file which sets the corresponding credentials at one place.
 
 The negative side effect of naming the containers is the fact that only one Owncloud instance can run on a host, since otherwise the names will
 be in conflict. From my perspective this is a reasonable tradeoff to have some static names, which enables easier Docker CLI usage.
